@@ -7,7 +7,6 @@
 <meta http-equiv=“Pragma” content=”no-cache”>
 <meta http-equiv=“Expires” content=”-1″>
 <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
-<!-- CSS Stylesheets -->
 <link rel="stylesheet" href="css/master.css">
 
 <title>API Project</title>
@@ -15,17 +14,56 @@
 
 <body>
     <header>
-        <h1>Time in my plans</h1>
+        <div class="hamburger" id="hamburger">
+            &#9776; 
+        </div>
+        <h1>Civil endpoint</h1>
         <a id="gitIcon" href="https://github.com/JhonierMejia10/Project-JS-Timer"><img src="./images/gitIcon.png" alt="GitHub Icon" width="40px" height="40px"></a>
     </header>
 
     <main>
-        <form action="post">
-            <div id="dropdown">
-                <select name="citySelected" id="citySelected" title="Select a city in the dropdown list"></select>
-            </div>
-        </form>
-
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">Civil endpoint</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="second-column-body">
+            <h2>Selecciona una ciudad</h2>
+            <form action="post">
+                <select name="citySelected" id="citySelected" data-toggle="tooltip" title="Select a city in the dropdown list">
+                    <option disabled selected> Selecciona una ciudad </option>
+                    <option value="{"lat":"52.367","lon":"4.904"}">Amsterdam, Netherlands</option>
+                    <option value="{"lat":"39.933","lon":"32.859"}">Ankara, Turkey</option>
+                    <option value="{"lat":"56.134","lon":"12.945"}">Astorp, Sweden</option>
+                    <option value="{"lat":"37.983","lon":"23.727"}">Athens,Greece</option>
+                    <option value="{"lat":"54.597","lon":"-5.930"}">Belfast,Northern Ireland</option>
+                    <option value="{"lat":"41.387","lon":"2.168"}">Barcelona,Spain</option>
+                    <option value="{"lat":"52.520","lon":"13.405"}">Berlin,Germany</option>
+                    <option value="{"lat":"46.948","lon":"7.447"}">Bern,Switzerland</option>
+                    <option value="{"lat":"43.263","lon":"-2.935"}">Bilbao,Spain</option>
+                    <option value="{"lat":"50.847","lon":"4.357"}">Brussels,Belgium</option>
+                    <option value="{"lat":"47.497","lon":"19.040"}">Bucharest,Romania</option>
+                    <option value="{"lat":"59.329","lon":"18.068"}">Budapest,Hungary</option>
+                    <option value="{"lat":"51.483","lon":"-3.168"}">Cardiff,Wales</option>
+                    <option value="{"lat":"50.937","lon":"6.96"}">Cologne,Germany</option>
+                    <option value="{"lat":"55.676","lon":"12.568}">Copenhagen,Denmark</option>
+                    <option value="{"lat":"51.898","lon":"-8.475"}">Cork,Ireland</option>
+                    <option value="{"lat":"53.349","lon":"-6.260"}">Dublin,Ireland</option>
+                    <option value="{"lat":"55.953","lon":"-3.188"}">Edinburgh,Scotland</option>
+                    <option value="{"lat":"43.7696","lon":"11.255"}">Florence,Italy</option>
+                    <option value="{"lat":"50.110","lon":"8.682"}">Frankfurt,Germany</option>
+                    <option value="{"lat":"43.254","lon":"6.637"}">French Riviera,France</option>
+                    <option value="{"lat":"32.650","lon":"16.908"}">Funchal,Portugual</option>
+                    <option value="{"lat":"36.140","lon":"-5.353"}">Gibraltar</option>
+                    <option value="{"lat":"57.708","lon":"11.974"}">Gothenburg,Sweden </option>
+                    <option value="{"lat":"53.548","lon":"9.987"}">Hamburg,Germany</option>
+                </select>
+            </form>
+        </div>
+        
     </main>
 
    
@@ -44,3 +82,5 @@
 
 <!-- Our codes -->
 <script src="js/main.js"></script>
+
+

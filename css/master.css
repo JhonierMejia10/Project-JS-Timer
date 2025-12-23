@@ -2,7 +2,7 @@ body {
     background-color: white;
     color: black;
     display: grid;
-    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: 10% auto 20%;
     height: 100vh;
 }
 
@@ -11,14 +11,43 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
+    /*border: 1px solid black;*/
     width: 98%;
-    height: 40%;
+    height: 100%;
     margin-left:auto;
     margin-right: auto;
-    margin-top: 20px ;
+    margin-top: 0 ;
     
 }
+.hamburger{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.nav-menu{
+    display: none;
+}
+
+.nav-menu.activate{
+    display: block;
+}
+.nav-menu ul{
+    list-style: none;
+    padding: 5;
+}
+
+.nav-menu ul li {
+    margin: 40px 0;
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium ;
+    color: black;
+}
+
 h1{
     font-family:'Times New Roman', Times, serif;
     font-weight:200;
@@ -31,10 +60,26 @@ h1{
 }
 
 main{
-    margin: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
     width: 98%;
+    /*border: 1px black solid;*/
+    display: grid;
+    grid-template-columns: 10% 90%;
 }
+
+.second-column-body{
+    margin-right: 12%;
+    text-align: center;
+    grid-column: 2;
+}
+
+.second-column-body h2{
+    font-weight: 200;
+}
+
 footer{
     display: grid;
     grid-template-columns: auto auto;
